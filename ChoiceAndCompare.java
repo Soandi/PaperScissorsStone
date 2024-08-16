@@ -17,7 +17,6 @@ public class ChoiceAndCompare {
         String botOp = botOptions.get(new Random().nextInt(botOptions.size()));
         String imgShow = "";
         if (botOp.equals(userSelect)) {
-            System.out.println("Ничья");
             imgShow = "draw.png";
         }
         if (botOp.equals("ножницы") && userSelect.equals("камень")) {

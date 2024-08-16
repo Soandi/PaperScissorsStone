@@ -91,7 +91,7 @@ public class GeneralGameWindow extends JFrame implements ActionListener {
                 jResult.setVisible(true);
                 showScore.setText("Партий: " + getScoreCounter() + " | " + getNamer() + ": " + getScoreUser() + " | Бот: " + getScoreBot());
 
-                Timer timer = new Timer(3000, (_) -> jResult.setVisible(false));
+                Timer timer = new Timer(3000, (event) -> jResult.setVisible(false));
                 timer.setRepeats(false);
                 timer.start();
 
@@ -124,7 +124,7 @@ public class GeneralGameWindow extends JFrame implements ActionListener {
                 jResult.setIcon(new ImageIcon(pathToResources + uLink));
                 jResult.setVisible(true);
                 showScore.setText("Партий: " + getScoreCounter() + " | " + getNamer() + ": " + getScoreUser() + " | Бот: " + getScoreBot());
-                Timer timer = new Timer(3000, (_) -> jResult.setVisible(false));
+                Timer timer = new Timer(3000, (event) -> jResult.setVisible(false));
                 timer.setRepeats(false);
                 timer.start();
 
@@ -155,7 +155,7 @@ public class GeneralGameWindow extends JFrame implements ActionListener {
         author.setVisible(true);
         add(author);
 
-        Timer authT = new Timer(3000, (_) -> author.setVisible(false));
+        Timer authT = new Timer(3000, (event) -> author.setVisible(false));
         authT.setRepeats(false);
         authT.start();
 
@@ -172,7 +172,7 @@ public class GeneralGameWindow extends JFrame implements ActionListener {
                 jResult.setVisible(true);
                 showScore.setText("Партий: " + getScoreCounter() + " | " + getNamer() + ": " + getScoreUser() + " | Бот: " + getScoreBot());
 
-                Timer timer = new Timer(3000, (_) -> jResult.setVisible(false));
+                Timer timer = new Timer(3000, (event) -> jResult.setVisible(false));
                 timer.setRepeats(false);
                 timer.start();
 

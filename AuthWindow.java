@@ -20,7 +20,7 @@ public class AuthWindow extends JFrame implements ActionListener{
             setDefaultCloseOperation(EXIT_ON_CLOSE);
             ImageIcon img = new ImageIcon(GeneralGameWindow.pathToResources + "icon.jpg");
             setIconImage(img.getImage());
-            setContentPane(new Background(GeneralGameWindow.pathToResources+"/bg.jpg"));
+            setContentPane(new Background(GeneralGameWindow.pathToResources+"bg.jpg"));
             setLayout(null);
             setResizable(false);
 
@@ -40,7 +40,7 @@ public class AuthWindow extends JFrame implements ActionListener{
             usBn.setFocusPainted(false);
 
 
-            usBn.addActionListener((_) -> {
+            usBn.addActionListener(event -> {
                 if (uName.getText() != null) {
                     GeneralGameWindow.setNamer(uName.getText());
                     dispose();
